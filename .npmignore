@@ -1,4 +1,11 @@
-src
+.github
+.storybook
 node_modules
-tsconfig.json
+packages
 .gitignore
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+pnpm-lock.yaml
+SECURITY.md
+tsconfig.json
+storybook-static
