@@ -1,6 +1,6 @@
 {
   "name": "mart-desing-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package provides a function to generate Sass files based on specific options",
   "main": "index.js",
   "scripts": {
