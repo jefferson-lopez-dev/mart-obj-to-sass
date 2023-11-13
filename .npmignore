@@ -1,4 +1,5 @@
 dist/scripts
+scripts
 .github
 .storybook
 node_modules
