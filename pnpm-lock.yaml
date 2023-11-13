@@ -5,11 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  clear:
+    specifier: ^0.1.0
+    version: 0.1.0
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
 
 packages:
+
+  /clear@0.1.0:
+    resolution: {integrity: sha512-qMjRnoL+JDPJHeLePZJuao6+8orzHMGP04A8CdwCNsKhRbOnKRjefxONR7bwILT3MHecxKBjHkKL/tkZ8r4Uzw==}
+    dev: true
 
   /typescript@5.2.2:
     resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
