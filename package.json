@@ -1,5 +1,5 @@
 {
-  "name": "mart-desing-tokens",
+  "name": "mart-obg-to-sass",
   "version": "1.0.2",
   "description": "This package provides a function to generate Sass files based on specific options",
   "main": "dist/index.js",
