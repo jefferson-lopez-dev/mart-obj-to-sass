@@ -1,12 +1,13 @@
 {
   "name": "mart-obj-to-sass",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This package provides a function to generate Sass files based on specific options",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "scripts": "pnpm run tsc && cls && node ./dist/scripts/objToSass",
+    "build": "pnpm run tsc",
     "tsc": "tsc"
   },
   "keywords": [],
