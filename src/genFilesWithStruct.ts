@@ -1,8 +1,8 @@
+import { genSingleFileDev } from "./dev/genSingleFileDev";
+import { yellow, grey, green, bold } from "colors";
+import { clgSpc } from "./utils/clg";
 import { promisify } from "util";
 import { writeFile } from "fs";
-import { yellow, grey, green, bold } from "colors";
-import { clgBordrSpc, clgSpc } from "./utils/clg";
-import { genSingleFileDev } from "./genSingleFileDev";
 
 export async function genFilesWithStruct(
   obj: object,
@@ -21,9 +21,6 @@ export async function genFilesWithStruct(
 
   for (const key of keys) {
     await genSingleFileDev(objTyped[key], `${rootFolder}/${key}`, key);
-    if (generateIndex) {
-      contentIndex += `@import "./${key}/${key}";\n`;
-    }
   }
   if (generateIndex) {
     await writeFileAsync(`${rootFolder}/_index.scss`, contentIndex);

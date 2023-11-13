@@ -1,8 +1,8 @@
 import { writeFile, mkdir } from "fs";
-import { convObjToSassVars } from "./";
 import { promisify } from "util";
 import { bold, green, grey, yellow } from "colors";
-import { clgBordrSpc, clgSpc } from "./utils/clg";
+import { clgSpc } from "./utils/clg";
+import { convObjToSassVarsDev } from "./dev";
 
 const mkdirAsync = promisify(mkdir);
 const writeFileAsync = promisify(writeFile);
@@ -12,7 +12,7 @@ export async function genSingleFile(
   folderPath: string,
   fileName: string
 ) {
-  const content = convObjToSassVars(obj);
+  const content = convObjToSassVarsDev(obj);
   const file = `${folderPath}/_${fileName}.scss`;
   const fileMgs = green(`[_${fileName}.scss]`);
   const successMsg = "  File created";
